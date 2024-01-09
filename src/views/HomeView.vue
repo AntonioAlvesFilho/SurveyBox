@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="contain">
+    <div>
+      <SurveyBoxVue />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import SurveyBoxVue from '@/components/SurveyBoxVue.vue'
 export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-};
+  name: 'HomeView',
+  components: { SurveyBoxVue }
+}
 </script>
+
+<style scoped>
+.contain {
+  width: auto;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>
